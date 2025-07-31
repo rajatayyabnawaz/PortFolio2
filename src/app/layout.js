@@ -6,7 +6,7 @@ import Header from './Header';
 import Footer from './Footer';
 // app/layout.jsx
 export const metadata = {
-  title: "My PortFolio", 
+  title: "Wellcome To Raja Tayyab PortFolio", 
   description: "Welcome to my PortFolio",
 };
 
