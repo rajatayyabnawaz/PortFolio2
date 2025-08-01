@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import data from './data'; // Make sure your data has fields like category, image, etc.
+import data from './data'; // data should include githubUrl field
 
 const categories = ['All', 'MERN Stack', 'Next.js', 'Data Analyst'];
 
@@ -47,7 +47,16 @@ const Shop = () => {
             <div className="p-4">
               <h2 className="text-xl font-bold mb-2">{item.name}</h2>
               <p className="text-sm text-gray-400 mb-1">Category: {item.category}</p>
-              <p className="text-base text-gray-300">Description: {item.description}</p>
+              <p className="text-base text-gray-300 mb-4">Description: {item.description}</p>
+
+              <a
+                href="https://github.com/rajatayyabnawaz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-4 py-2 bg-white text-black text-sm rounded hover:bg-gray-300"
+              >
+                View Source Code
+              </a>
             </div>
           </div>
         ))}
